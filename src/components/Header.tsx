@@ -64,13 +64,6 @@ export default function Header() {
             </div>
             <span className="text-xl font-bold text-gray-900 dark:text-gray-100 tracking-tight">QSet Hub</span>
           </div>
-          
-          <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-700 dark:text-gray-300">
-            <a href="#" className="transition-colors hover:text-blue-600 dark:hover:text-blue-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md">Product <span className="text-gray-400 text-[10px]">▼</span></a>
-            <a href="#question-sets" className="transition-colors hover:text-blue-600 dark:hover:text-blue-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md">Use cases <span className="text-gray-400 text-[10px]">▼</span></a>
-            <a href="#question-sets" className="transition-colors hover:text-blue-600 dark:hover:text-blue-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md">Pricing</a>
-            <a href="#" className="transition-colors hover:text-blue-600 dark:hover:text-blue-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md">Compare <span className="text-gray-400 text-[10px]">▼</span></a>
-          </nav>
         </div>
 
         <div className="hidden md:flex items-center gap-4">
