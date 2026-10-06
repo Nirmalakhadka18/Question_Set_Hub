@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="bg-[var(--surface-2)] pt-6 pb-5 border-b border-[var(--border)]">
+    <section className="pt-6 pb-5 border-b border-[var(--border)]">
       <div className="mx-auto max-w-[1600px] px-4 md:px-8 lg:px-12 xl:px-14 flex flex-col items-center text-center">
         
         <div className="inline-flex items-center gap-2 rounded border border-[var(--border)] bg-white px-2 py-0.5 text-[10px] font-bold mb-3 uppercase tracking-wider text-[var(--accent)]">
