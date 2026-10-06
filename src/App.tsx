@@ -36,8 +36,8 @@ function App() {
               <div>
                 <h2 className="text-xl font-bold text-[var(--fg)] sm:text-2xl">Question Sets</h2>
                 <div className="mt-2 flex items-center gap-3 text-xs font-mono text-[var(--fg-muted)]">
-                  <span className="bg-[var(--surface-2)] px-2 py-1 rounded">12 QUESTION SETS</span>
-                  <span className="bg-[var(--surface-2)] px-2 py-1 rounded">11 TOPICS</span>
+                  <span className="bg-[var(--surface-2)] px-2 py-1 rounded">{questionSets.length} QUESTION SETS</span>
+                  <span className="bg-[var(--surface-2)] px-2 py-1 rounded">{categories.length - 1} TOPICS</span>
                 </div>
               </div>
             </div>

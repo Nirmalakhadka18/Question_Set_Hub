@@ -118,5 +118,13 @@ export const questionSets: QuestionSet[] = [
     description: "Practice Security Operations Center (SOC) analyst concepts and L1 interview questions through an interactive preparation lab.",
     category: "Security / SOC",
     url: "https://soc-analyst-prep.golddgokul.workers.dev/"
+  },
+  {
+    id: "13",
+    number: "13",
+    title: "DNS & IP Services Interview Prep",
+    description: "Interactive interview simulator covering DNS, IP addressing, DHCP, and related network services.",
+    category: "Networking",
+    url: "https://networking-interview-prep.olladns.workers.dev/"
   }
 ];
