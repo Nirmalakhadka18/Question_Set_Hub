@@ -17,21 +17,21 @@ export default function QuestionSetCard({ set }: QuestionSetCardProps) {
       className="group flex flex-col justify-between overflow-hidden rounded border border-[var(--border)] bg-white transition-all duration-200 hover:border-[var(--accent)] hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg)] cursor-pointer"
     >
       <div>
-        <div className="relative h-[120px] w-full border-b border-[var(--border)] bg-[var(--surface-2)]">
+        <div className="relative aspect-[4/3] w-full border-b border-[var(--border)] bg-[var(--surface-2)] overflow-hidden">
           <img 
             src={set.imageUrl} 
             alt={set.title} 
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-center"
             loading="lazy"
           />
         </div>
         
         <div className="p-4 pb-0">
-          <div className="mb-3 flex items-center justify-between w-full">
-            <span className="inline-flex items-center justify-center rounded bg-[#2563eb] px-2 py-0.5 text-[11px] tracking-wider font-bold text-white shadow-sm">
+          <div className="mb-3 flex items-center justify-between w-full gap-2">
+            <span className="inline-flex items-center justify-center rounded bg-[#2563eb] px-2 py-0.5 text-[11px] tracking-wider font-bold text-white shadow-sm whitespace-nowrap">
               {set.category}
             </span>
-            <span className="text-[11px] font-semibold text-[var(--fg-muted)] tracking-wider">
+            <span className="text-[11px] font-semibold text-[var(--fg-muted)] tracking-wider whitespace-nowrap">
               SET {set.number}
             </span>
           </div>
