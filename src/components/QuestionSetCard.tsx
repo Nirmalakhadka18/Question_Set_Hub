@@ -90,37 +90,42 @@ export default function QuestionSetCard({ set }: QuestionSetCardProps) {
       href={set.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block flex flex-col justify-between rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-900/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-950 cursor-pointer"
+      className="group block flex flex-col justify-between rounded-md border border-[var(--border)] dark:border-[var(--border)] bg-[var(--surface)] dark:bg-[var(--surface)] p-5 transition-all duration-200 hover:border-blue-500 hover:bg-[var(--bg)] dark:hover:bg-[var(--surface-2)]/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950 cursor-pointer"
     >
       <div>
         <div className="mb-4 flex flex-col items-start gap-3">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400">
-            <CategoryIcon category={set.category} />
+          <div className="flex items-center gap-3 w-full">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-slate-100 text-[var(--accent)] dark:bg-[var(--surface-2)] dark:text-blue-400">
+              <CategoryIcon category={set.category} />
+            </div>
+            <span className="inline-flex items-center justify-center rounded bg-slate-100 dark:bg-[var(--surface-2)] px-2 py-1 text-[11px] uppercase tracking-widest font-mono font-semibold text-slate-600 dark:text-[var(--fg-muted)]">
+              {set.category}
+            </span>
+            <span className="ml-auto font-mono text-sm text-[var(--fg-muted)] dark:text-[var(--fg-muted)]">
+              {set.number}
+            </span>
           </div>
-          <span className="inline-flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 text-xs font-semibold text-gray-800 dark:text-gray-200 text-center leading-tight">
-            {set.category}
-          </span>
         </div>
         
-        <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
+        <h3 className="text-lg font-bold text-[var(--fg)] dark:text-[var(--fg)] mb-2 group-hover:text-[var(--accent)] dark:group-hover:text-blue-400 transition-colors line-clamp-2">
           {set.title}
         </h3>
         
-        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-6 line-clamp-3">
+        <p className="text-sm text-slate-600 dark:text-[var(--fg-muted)] leading-relaxed mb-4 line-clamp-3">
           {set.description}
         </p>
       </div>
 
-      <div className="mt-auto pt-6 border-t border-gray-100 dark:border-gray-800">
+      <div className="mt-auto pt-4 border-t border-slate-100 dark:border-[var(--border)]">
         <div
-          className="flex items-center justify-between text-sm font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 transition-colors"
+          className="flex items-center justify-end text-sm font-semibold text-[var(--fg)] dark:text-[var(--fg)] group-hover:text-[var(--accent)] dark:group-hover:text-blue-400 transition-colors"
         >
-          <span className="text-gray-500 dark:text-gray-500">Set {set.number}</span>
-          <span className="flex items-center gap-1 text-blue-600 font-bold">
-            View Question Set <ArrowUpRightIcon className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+          <span className="flex items-center gap-1">
+            Open Simulator <ArrowUpRightIcon className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </span>
         </div>
       </div>
     </a>
   );
 }
+

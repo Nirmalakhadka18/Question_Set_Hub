@@ -15,15 +15,13 @@
     <title>Question Set Hub | Technical Interview Preparation</title>
     <link rel="canonical" href="https://question-set-hub.pages.dev/" />
     <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
+      // Enforce dark technical theme by default
+      document.documentElement.classList.add('dark');
     </script>
   </head>
-  <body>
+  <body class="bg-[var(--bg)] dark:bg-[var(--bg)] text-[var(--fg)] dark:text-[var(--fg)] antialiased">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+

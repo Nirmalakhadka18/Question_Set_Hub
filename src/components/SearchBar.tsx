@@ -9,14 +9,14 @@ interface SearchBarProps {
 
 export default function SearchBar({ value, onChange }: SearchBarProps) {
   return (
-    <div className="relative max-w-lg w-full">
+    <div className="relative w-full max-w-xl">
       <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
-        <SearchIcon className="h-5 w-5 text-gray-400" />
+        <SearchIcon className="h-4 w-4 text-[var(--fg-muted)]" />
       </div>
       <input
         type="search"
-        className="block w-full rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 py-3.5 pl-11 pr-4 text-sm text-gray-900 dark:text-gray-100 shadow-sm transition-colors focus:border-blue-500 dark:focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        placeholder="Search question sets..."
+        className="block w-full rounded-md border border-slate-300 dark:border-[var(--border)] bg-[var(--surface)] dark:bg-[var(--surface)] py-3 pl-11 pr-4 text-sm text-[var(--fg)] dark:text-[var(--fg)] shadow-inner transition-colors focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 font-mono placeholder:text-[var(--fg-muted)]"
+        placeholder="grep -i 'question set'..."
         value={value}
         onChange={(e) => onChange(e.target.value)}
         aria-label="Search question sets"
@@ -24,3 +24,4 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
     </div>
   );
 }
+
