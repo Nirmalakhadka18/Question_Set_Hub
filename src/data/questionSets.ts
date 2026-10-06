@@ -18,7 +18,6 @@ export const categories = [
   "Web Security",
   "Linux",
   "IAM",
-  "Interview Preparation",
   "Security / SOC"
 ];
 
