@@ -6,9 +6,9 @@ interface CategoryFilterProps {
 
 export default function CategoryFilter({ categories, selectedCategory, onSelectCategory }: CategoryFilterProps) {
   return (
-    <div className="flex flex-col items-start gap-4 w-full">
-      <div className="flex w-full overflow-x-auto pb-4 scrollbar-hide">
-        <div className="flex gap-2 min-w-max">
+    <div className="flex flex-col items-start gap-4 w-full max-w-full">
+      <div className="flex w-full max-w-full overflow-x-auto pb-2">
+        <div className="flex gap-2 min-w-max pr-4">
           {categories.map((category) => (
             <button
               key={category}
