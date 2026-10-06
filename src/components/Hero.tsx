@@ -8,11 +8,11 @@ export default function Hero() {
           INTERVIEW PREPARATION HUB
         </div>
         
-        <h1 className="max-w-3xl text-xl font-bold text-[var(--fg)] sm:text-2xl mb-2">
+        <h1 className="max-w-[1100px] text-xl font-bold text-[var(--fg)] sm:text-2xl mb-2">
           Your Central Hub for Technical Interview Preparation
         </h1>
         
-        <p className="max-w-2xl text-sm text-[var(--fg-muted)]">
+        <p className="max-w-[900px] text-sm text-[var(--fg-muted)]">
           Explore technical interview question sets covering networking, security, cloud, DevOps, Linux, Azure, IAM and more.
         </p>
       </div>

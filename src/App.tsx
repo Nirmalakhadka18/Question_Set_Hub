@@ -42,7 +42,7 @@ function App() {
               </div>
             </div>
             
-            <div className="mb-8 flex flex-col items-start gap-4 w-full">
+            <div className="mb-6 flex flex-col items-start gap-4 w-full">
               <div className="w-full max-w-xl">
                 <SearchBar value={searchQuery} onChange={setSearchQuery} />
               </div>
