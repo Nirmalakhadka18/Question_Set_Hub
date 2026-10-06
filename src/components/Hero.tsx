@@ -1,7 +1,3 @@
-const ArrowRightIcon = ({ className }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-);
-
 export default function Hero() {
   return (
     <section className="bg-[var(--bg)] pt-8 pb-6 border-b border-[var(--border)]">
@@ -19,22 +15,6 @@ export default function Hero() {
         <p className="max-w-2xl text-base text-[var(--fg-muted)] font-medium mb-6">
           Explore technical interview question sets covering networking, security, cloud, DevOps, Linux, Azure, IAM and more.
         </p>
-        
-        <div className="flex flex-col sm:flex-row items-start gap-3">
-          <a
-            href="#question-sets"
-            className="group relative inline-flex items-center justify-center gap-2 rounded-md bg-[var(--accent)] px-4 py-2 text-sm font-semibold text-[#0b1120] transition-colors hover:bg-blue-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-[var(--bg)]"
-          >
-            Explore Question Sets
-            <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </a>
-          <a
-            href="#question-sets"
-            className="inline-flex items-center justify-center rounded-md border border-[var(--border)] bg-[var(--surface)] px-4 py-2 text-sm font-semibold text-[var(--fg)] transition-all hover:bg-[var(--surface-2)] shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-[var(--bg)]"
-          >
-            View Categories
-          </a>
-        </div>
       </div>
     </section>
   );

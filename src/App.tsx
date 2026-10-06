@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import SearchBar from './components/SearchBar';
 import CategoryFilter from './components/CategoryFilter';
 import QuestionSetCard from './components/QuestionSetCard';
-import Footer from './components/Footer';
 import { questionSets, categories } from './data/questionSets';
 
 function App() {
@@ -85,8 +84,6 @@ function App() {
           </div>
         </section>
       </main>
-      
-      <Footer />
     </div>
   );
 }

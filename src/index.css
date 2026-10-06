@@ -22,6 +22,8 @@
     --fg-muted: #526077;
     --accent: #2563eb;
     --accent-fg: #fff;
+    --scroll-thumb: #c9d2df;
+    --scroll-thumb-hover: #9eabbe;
   }
   .dark {
     --bg: #0b1120;
@@ -32,6 +34,8 @@
     --fg-muted: #9aa8bf;
     --accent: #6b9bff;
     --accent-fg: #0b1120;
+    --scroll-thumb: #2a3857;
+    --scroll-thumb-hover: #40527a;
   }
 }
 
@@ -42,4 +46,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb, #2a3857);
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scroll-thumb-hover, #40527a);
 }
