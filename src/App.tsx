@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Stats from './components/Stats';
 import SearchBar from './components/SearchBar';
 import CategoryFilter from './components/CategoryFilter';
 import QuestionSetCard from './components/QuestionSetCard';
@@ -31,16 +30,20 @@ function App() {
       
       <main>
         <Hero />
-        <Stats />
         
-        <section id="question-sets" className="pt-12 md:pt-16 pb-16">
+        <section id="question-sets" className="py-8">
           <div className="mx-auto max-w-7xl px-4 md:px-8 xl:px-16">
-            <div className="mb-10 text-left max-w-2xl">
-              <h2 className="text-2xl font-bold text-[var(--fg)] sm:text-3xl">Explore Question Sets</h2>
-              <p className="mt-3 text-base text-[var(--fg-muted)]">Choose a topic and start preparing.</p>
+            <div className="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <h2 className="text-xl font-bold text-[var(--fg)] sm:text-2xl">Question Sets</h2>
+                <div className="mt-2 flex items-center gap-3 text-xs font-mono text-[var(--fg-muted)]">
+                  <span className="bg-[var(--surface-2)] px-2 py-1 rounded">12 QUESTION SETS</span>
+                  <span className="bg-[var(--surface-2)] px-2 py-1 rounded">11 TOPICS</span>
+                </div>
+              </div>
             </div>
             
-            <div className="mb-10 flex flex-col items-start gap-5 w-full">
+            <div className="mb-8 flex flex-col items-start gap-4 w-full">
               <div className="w-full max-w-xl">
                 <SearchBar value={searchQuery} onChange={setSearchQuery} />
               </div>
@@ -89,4 +92,5 @@ function App() {
 }
 
 export default App;
+
 

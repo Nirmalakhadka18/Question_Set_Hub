@@ -90,18 +90,18 @@ export default function QuestionSetCard({ set }: QuestionSetCardProps) {
       href={set.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block flex flex-col justify-between rounded-md border border-[var(--border)] bg-[var(--surface)] p-5 transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--surface-2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg)] cursor-pointer"
+      className="group block flex flex-col justify-between rounded-md border border-[var(--border)] bg-[var(--surface)] p-4 transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--surface-2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg)] cursor-pointer"
     >
       <div>
         <div className="mb-4 flex flex-col items-start gap-3">
           <div className="flex items-center gap-3 w-full">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-[var(--surface-2)] text-[var(--accent)]">
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[var(--surface-2)] text-[var(--accent)]">
               <CategoryIcon category={set.category} />
             </div>
             <span className="inline-flex items-center justify-center rounded bg-[var(--surface-2)] px-2 py-1 text-[11px] uppercase tracking-widest font-mono font-semibold text-[var(--fg-muted)]">
               {set.category}
             </span>
-            <span className="ml-auto font-mono text-sm text-[var(--fg-muted)]">
+            <span className="ml-auto font-mono text-xs text-[var(--fg-muted)]">
               SET {set.number}
             </span>
           </div>

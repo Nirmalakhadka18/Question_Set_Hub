@@ -4,33 +4,33 @@ const ArrowRightIcon = ({ className }: { className?: string }) => (
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[var(--bg)] pt-16 md:pt-24 pb-12 md:pb-16 border-b border-[var(--border)]">
-      <div className="mx-auto max-w-7xl px-4 md:px-8 xl:px-16">
+    <section className="bg-[var(--bg)] pt-8 pb-6 border-b border-[var(--border)]">
+      <div className="mx-auto max-w-7xl px-4 md:px-8 xl:px-16 flex flex-col items-start text-left">
         
-        <div className="inline-flex items-center gap-2 rounded-md border border-[var(--border)] bg-[var(--surface)] px-3 py-1 text-xs font-mono font-semibold mb-6 uppercase tracking-wider text-[var(--fg-muted)]">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--accent)]"><path d="M4 10h16"/><path d="M4 14h16"/></svg>
+        <div className="inline-flex items-center gap-2 rounded-md border border-[var(--border)] bg-[var(--surface)] px-2.5 py-1 text-[11px] font-mono font-semibold mb-4 uppercase tracking-wider text-[var(--fg-muted)]">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--accent)]"><path d="M4 10h16"/><path d="M4 14h16"/></svg>
           INTERVIEW PREPARATION HUB
         </div>
         
-        <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-[var(--fg)] sm:text-5xl md:text-6xl mb-6">
+        <h1 className="max-w-3xl text-2xl font-bold tracking-tight text-[var(--fg)] sm:text-3xl mb-3">
           Your Central Hub for Technical Interview Preparation
         </h1>
         
-        <p className="max-w-2xl text-lg text-[var(--fg-muted)] font-medium mb-8">
+        <p className="max-w-2xl text-base text-[var(--fg-muted)] font-medium mb-6">
           Explore technical interview question sets covering networking, security, cloud, DevOps, Linux, Azure, IAM and more.
         </p>
         
-        <div className="flex flex-col sm:flex-row items-start gap-4">
+        <div className="flex flex-col sm:flex-row items-start gap-3">
           <a
             href="#question-sets"
-            className="group relative inline-flex items-center justify-center gap-2 rounded-md bg-[var(--accent)] px-6 py-3 text-sm font-bold text-[#0b1120] transition-colors hover:bg-blue-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-[var(--bg)]"
+            className="group relative inline-flex items-center justify-center gap-2 rounded-md bg-[var(--accent)] px-4 py-2 text-sm font-semibold text-[#0b1120] transition-colors hover:bg-blue-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-[var(--bg)]"
           >
             Explore Question Sets
-            <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
           <a
             href="#question-sets"
-            className="inline-flex items-center justify-center rounded-md border border-[var(--border)] bg-[var(--surface)] px-6 py-3 text-sm font-bold text-[var(--fg)] transition-all hover:bg-[var(--surface-2)] shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-[var(--bg)]"
+            className="inline-flex items-center justify-center rounded-md border border-[var(--border)] bg-[var(--surface)] px-4 py-2 text-sm font-semibold text-[var(--fg)] transition-all hover:bg-[var(--surface-2)] shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-[var(--bg)]"
           >
             View Categories
           </a>
