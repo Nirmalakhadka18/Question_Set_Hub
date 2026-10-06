@@ -55,14 +55,14 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[var(--border)] dark:border-[var(--border)] bg-[var(--bg)] dark:bg-[var(--bg)]/80 backdrop-blur-md shadow-sm transition-colors duration-200">
+    <header className="sticky top-0 z-50 w-full border-b border-[var(--border)] bg-[var(--bg)]/80 backdrop-blur-md shadow-sm transition-colors duration-200">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 md:px-8 xl:px-16 h-16">
         <div className="flex items-center gap-8 lg:gap-12">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-[var(--accent)] text-white font-mono font-bold">
+            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-[var(--accent)] text-[#0b1120] font-mono font-bold">
               Q
             </div>
-            <span className="text-xl font-bold text-[var(--fg)] dark:text-[var(--fg)] tracking-tight">Question Set Hub</span>
+            <span className="text-xl font-bold text-[var(--fg)] tracking-tight">Question Set Hub</span>
           </div>
         </div>
 
@@ -70,9 +70,9 @@ export default function Header() {
           <ThemeToggle />
           <a 
             href="#question-sets"
-            className="group flex items-center gap-2 rounded-md bg-[var(--accent)] px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-[var(--accent)] hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 dark:focus-visible:ring-offset-slate-900"
+            className="group flex items-center gap-2 rounded-md bg-[var(--accent)] px-4 py-2 text-sm font-semibold text-[#0b1120] transition-all hover:bg-blue-400 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-[var(--bg)]"
           >
-            Explore Modules
+            Explore Question Sets
             <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
         </div>
@@ -80,7 +80,7 @@ export default function Header() {
         <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
           <button 
-            className="p-2 text-slate-600 dark:text-[var(--fg-muted)] hover:text-[var(--fg)] dark:hover:text-[var(--fg)] rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+            className="p-2 text-[var(--fg-muted)] hover:text-[var(--fg)] rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileMenuOpen}
@@ -92,17 +92,17 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-[var(--border)] dark:border-[var(--border)] bg-[var(--bg)] dark:bg-[var(--bg)] p-4 transition-colors duration-200">
+        <div className="md:hidden border-t border-[var(--border)] bg-[var(--bg)] p-4 transition-colors duration-200">
           <nav className="flex flex-col space-y-4">
-            <a href="#" className="text-base font-medium text-[var(--fg)] dark:text-[var(--fg)]" onClick={() => setMobileMenuOpen(false)}>Home</a>
-            <a href="#question-sets" className="text-base font-medium text-slate-600 dark:text-[var(--fg-muted)]" onClick={() => setMobileMenuOpen(false)}>Question Sets</a>
-            <a href="#question-sets" className="text-base font-medium text-slate-600 dark:text-[var(--fg-muted)]" onClick={() => setMobileMenuOpen(false)}>Categories</a>
+            <a href="#" className="text-base font-medium text-[var(--fg)]" onClick={() => setMobileMenuOpen(false)}>Home</a>
+            <a href="#question-sets" className="text-base font-medium text-[var(--fg-muted)] hover:text-[var(--fg)]" onClick={() => setMobileMenuOpen(false)}>Question Sets</a>
+            <a href="#question-sets" className="text-base font-medium text-[var(--fg-muted)] hover:text-[var(--fg)]" onClick={() => setMobileMenuOpen(false)}>Categories</a>
             <a 
               href="#question-sets"
-              className="mt-4 flex items-center justify-center gap-2 rounded-md bg-[var(--accent)] px-4 py-3 text-base font-semibold text-white"
+              className="mt-4 flex items-center justify-center gap-2 rounded-md bg-[var(--accent)] px-4 py-3 text-base font-semibold text-[#0b1120]"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Explore Modules
+              Explore Question Sets
               <ArrowRightIcon className="h-4 w-4" />
             </a>
           </nav>

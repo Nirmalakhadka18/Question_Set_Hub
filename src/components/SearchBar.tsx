@@ -15,8 +15,8 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
       </div>
       <input
         type="search"
-        className="block w-full rounded-md border border-slate-300 dark:border-[var(--border)] bg-[var(--surface)] dark:bg-[var(--surface)] py-3 pl-11 pr-4 text-sm text-[var(--fg)] dark:text-[var(--fg)] shadow-inner transition-colors focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 font-mono placeholder:text-[var(--fg-muted)]"
-        placeholder="grep -i 'question set'..."
+        className="block w-full rounded-md border border-[var(--border)] bg-[var(--surface)] py-3 pl-11 pr-4 text-sm text-[var(--fg)] shadow-sm transition-colors focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)] font-mono placeholder:text-[var(--fg-muted)]"
+        placeholder="Search question sets..."
         value={value}
         onChange={(e) => onChange(e.target.value)}
         aria-label="Search question sets"

@@ -14,10 +14,10 @@ export default function CategoryFilter({ categories, selectedCategory, onSelectC
               key={category}
               onClick={() => onSelectCategory(category)}
               aria-pressed={selectedCategory === category}
-              className={`rounded-md px-3 py-1.5 text-xs font-mono font-semibold transition-colors border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 shadow-sm ${
+              className={`rounded-md px-3 py-1.5 text-xs font-mono font-semibold transition-colors border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--accent)] shadow-sm ${
                 selectedCategory === category
-                  ? 'bg-[var(--accent)] border-blue-600 text-white shadow-md dark:focus-visible:ring-offset-slate-950'
-                  : 'bg-[var(--surface)] dark:bg-[var(--surface)] border-[var(--border)] dark:border-[var(--border)] text-slate-600 dark:text-[var(--fg-muted)] hover:bg-[var(--bg)] dark:hover:bg-[var(--surface-2)] hover:border-slate-300 dark:hover:border-[var(--border)] hover:text-[var(--fg)] dark:hover:text-slate-200'
+                  ? 'bg-[var(--accent)] border-[var(--accent)] text-[#0b1120] shadow-md focus-visible:ring-offset-[var(--bg)]'
+                  : 'bg-[var(--surface)] border-[var(--border)] text-[var(--fg-muted)] hover:bg-[var(--surface-2)] hover:border-[var(--border)] hover:text-[var(--fg)]'
               }`}
             >
               {category}
