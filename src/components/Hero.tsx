@@ -1,4 +1,4 @@
-export default function Hero() {
+﻿export default function Hero() {
   return (
     <section className="pt-6 pb-5 border-b border-[var(--border)]">
       <div className="mx-auto max-w-[1600px] px-4 md:px-8 lg:px-12 xl:px-14 flex flex-col items-center text-center">
@@ -8,8 +8,9 @@ export default function Hero() {
           INTERVIEW PREPARATION HUB
         </div>
         
-        <h1 className="max-w-[1100px] text-3xl font-extrabold tracking-tight text-[var(--fg)] sm:text-[40px] lg:text-[52px] leading-[1.05] mb-4">
-          Your Central Hub for<br className="hidden sm:block" /> Technical Interview Preparation
+        <h1 className="max-w-[1100px] text-3xl font-extrabold tracking-tight sm:text-[40px] lg:text-[52px] leading-[1.05] mb-4">
+          <span className="text-[var(--fg)]">Your Central Hub for</span><br className="hidden sm:block" />
+          <span className="bg-gradient-to-r from-[#2563eb] to-[#0ea5e9] bg-clip-text text-transparent">Technical Interview Preparation</span>
         </h1>
         
         <p className="max-w-[800px] text-base font-medium leading-relaxed text-[var(--fg-muted)]">
@@ -19,4 +20,3 @@ export default function Hero() {
     </section>
   );
 }
-
