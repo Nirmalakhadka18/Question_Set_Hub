@@ -8,8 +8,8 @@ export default function Hero() {
           INTERVIEW PREPARATION HUB
         </div>
         
-        <h1 className="max-w-[1000px] text-3xl font-extrabold tracking-tight text-[var(--fg)] sm:text-[40px] lg:text-[52px] leading-[1.05] mb-4">
-          Your Central Hub for Technical Interview Preparation
+        <h1 className="max-w-[1100px] text-3xl font-extrabold tracking-tight text-[var(--fg)] sm:text-[40px] lg:text-[52px] leading-[1.05] mb-4">
+          Your Central Hub for<br className="hidden sm:block" /> Technical Interview Preparation
         </h1>
         
         <p className="max-w-[800px] text-base font-medium leading-relaxed text-[var(--fg-muted)]">
