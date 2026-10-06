@@ -66,7 +66,7 @@ const DefaultIcon = (props: any) => (
 );
 
 const CategoryIcon = ({ category }: { category: string }) => {
-  const props = { className: "w-6 h-6" };
+  const props = { className: "w-4 h-4" };
   
   if (category.includes('Cloud Security')) return <CloudSecurityIcon {...props} />;
   if (category.includes('Network Security') || category.includes('Firewall') || category.includes('SOC')) return <SecurityIcon {...props} />;
@@ -90,38 +90,38 @@ export default function QuestionSetCard({ set }: QuestionSetCardProps) {
       href={set.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block flex flex-col justify-between rounded-md border border-[var(--border)] bg-[var(--surface)] p-4 transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--surface-2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg)] cursor-pointer"
+      className="group block flex flex-col justify-between rounded border border-[var(--border)] bg-white p-4 transition-all duration-200 hover:border-[var(--accent)] hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg)] cursor-pointer"
     >
       <div>
-        <div className="mb-4 flex flex-col items-start gap-3">
-          <div className="flex items-center gap-3 w-full">
-            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[var(--surface-2)] text-[var(--accent)]">
+        <div className="mb-3 flex flex-col items-start gap-2">
+          <div className="flex items-center gap-2 w-full">
+            <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded bg-[var(--surface-2)] text-[var(--accent)]">
               <CategoryIcon category={set.category} />
             </div>
-            <span className="inline-flex items-center justify-center rounded bg-[var(--surface-2)] px-2 py-1 text-[11px] uppercase tracking-widest font-mono font-semibold text-[var(--fg-muted)]">
+            <span className="inline-flex items-center justify-center rounded bg-[var(--surface-2)] border border-[var(--border)] px-1.5 py-0.5 text-[10px] uppercase tracking-wider font-bold text-[var(--fg-muted)]">
               {set.category}
             </span>
-            <span className="ml-auto font-mono text-xs text-[var(--fg-muted)]">
+            <span className="ml-auto text-[11px] font-bold text-[var(--fg-muted)] tracking-wider">
               SET {set.number}
             </span>
           </div>
         </div>
         
-        <h3 className="text-lg font-bold text-[var(--fg)] mb-2 group-hover:text-[var(--accent)] transition-colors line-clamp-2">
+        <h3 className="text-base font-bold text-[var(--fg)] mb-1.5 group-hover:text-[var(--accent)] transition-colors line-clamp-2">
           {set.title}
         </h3>
         
-        <p className="text-sm text-[var(--fg-muted)] leading-relaxed mb-4 line-clamp-3">
+        <p className="text-sm text-[var(--fg-muted)] leading-snug mb-3 line-clamp-3">
           {set.description}
         </p>
       </div>
 
-      <div className="mt-auto pt-4 border-t border-[var(--border)]">
+      <div className="mt-auto pt-3 border-t border-[var(--border)]">
         <div
-          className="flex items-center justify-end text-sm font-semibold text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors"
+          className="flex items-center justify-end text-[13px] font-bold text-[var(--accent)] transition-colors"
         >
           <span className="flex items-center gap-1">
-            Open Question Set <ArrowUpRightIcon className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+            Open Question Set <ArrowUpRightIcon className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </span>
         </div>
       </div>

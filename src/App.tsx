@@ -30,14 +30,14 @@ function App() {
       <main>
         <Hero />
         
-        <section id="question-sets" className="py-8">
+        <section id="question-sets" className="pt-6 pb-8">
           <div className="mx-auto max-w-[1600px] px-4 md:px-8 lg:px-12 xl:px-14">
-            <div className="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="mb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
-                <h2 className="text-xl font-bold text-[var(--fg)] sm:text-2xl">Question Sets</h2>
-                <div className="mt-2 flex items-center gap-3 text-xs font-mono text-[var(--fg-muted)]">
-                  <span className="bg-[var(--surface-2)] px-2 py-1 rounded">{questionSets.length} QUESTION SETS</span>
-                  <span className="bg-[var(--surface-2)] px-2 py-1 rounded">{categories.length - 1} TOPICS</span>
+                <h2 className="text-lg font-bold text-[var(--fg)] sm:text-xl">Question Sets</h2>
+                <div className="mt-1.5 flex items-center gap-2 text-[11px] font-bold tracking-wide text-[var(--fg-muted)]">
+                  <span className="bg-[var(--surface-2)] border border-[var(--border)] px-1.5 py-0.5 rounded">{questionSets.length} QUESTION SETS</span>
+                  <span className="bg-[var(--surface-2)] border border-[var(--border)] px-1.5 py-0.5 rounded">{categories.length - 1} TOPICS</span>
                 </div>
               </div>
             </div>

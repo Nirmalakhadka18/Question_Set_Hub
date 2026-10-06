@@ -15,7 +15,7 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
       </div>
       <input
         type="search"
-        className="block w-full rounded-md border border-[var(--border)] bg-[var(--surface)] py-2 pl-11 pr-4 text-sm text-[var(--fg)] shadow-sm transition-colors focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)] font-mono placeholder:text-[var(--fg-muted)]"
+        className="block w-full rounded border border-[var(--border)] bg-white py-1.5 pl-10 pr-3 text-sm text-[var(--fg)] shadow-sm transition-colors focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)] placeholder:text-[var(--fg-muted)]"
         placeholder="Search question sets..."
         value={value}
         onChange={(e) => onChange(e.target.value)}

@@ -14,36 +14,21 @@
 
 @layer base {
   :root {
-    --bg: #f6f8fb;
-    --surface: #fff;
-    --surface-2: #f1f4f9;
-    --border: #e3e8ef;
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #f8fafc;
+    --border: #e2e8f0;
     --fg: #0f172a;
-    --fg-muted: #526077;
+    --fg-muted: #64748b;
     --accent: #2563eb;
-    --accent-fg: #fff;
-    --scroll-thumb: #c9d2df;
-    --scroll-thumb-hover: #9eabbe;
-  }
-  .dark {
-    --bg: #0b1120;
-    --surface: #111a2e;
-    --surface-2: #17223a;
-    --border: #243150;
-    --fg: #e6edf7;
-    --fg-muted: #9aa8bf;
-    --accent: #6b9bff;
-    --accent-fg: #0b1120;
-    --scroll-thumb: #2a3857;
-    --scroll-thumb-hover: #40527a;
+    --accent-fg: #ffffff;
+    --scroll-thumb: #cbd5e1;
+    --scroll-thumb-hover: #94a3b8;
   }
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
