@@ -28,7 +28,7 @@ export const questionSets: QuestionSet[] = [
     number: "01",
     title: "Networking Interview Questions for Freshers",
     description: "Practice essential networking concepts and commonly asked interview questions for freshers.",
-    category: "Interview Preparation",
+    category: "Networking",
     url: "https://nh-prep.pages.dev"
   },
   {
