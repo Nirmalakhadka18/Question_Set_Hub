@@ -48,14 +48,6 @@ export const questionSets: QuestionSet[] = [
     url: "https://miles-performed-namespace-barry.trycloudflare.com/"
   },
   {
-    id: "4",
-    number: "04",
-    title: "Networking Interview Prep",
-    description: "Practice networking concepts and interview preparation.",
-    category: "Networking",
-    url: "https://networking-interview-prep.olladns.workers.dev"
-  },
-  {
     id: "5",
     number: "05",
     title: "DevOps Interview Prep",
