@@ -98,20 +98,20 @@ export default function QuestionSetCard({ set }: QuestionSetCardProps) {
             <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded bg-[var(--surface-2)] text-[var(--accent)]">
               <CategoryIcon category={set.category} />
             </div>
-            <span className="inline-flex items-center justify-center rounded bg-[var(--surface-2)] border border-[var(--border)] px-1.5 py-0.5 text-[10px] uppercase tracking-wider font-bold text-[var(--fg-muted)]">
+            <span className="inline-flex items-center justify-center rounded bg-[#2563eb] px-2 py-0.5 text-[11px] tracking-wider font-bold text-white shadow-sm">
               {set.category}
             </span>
-            <span className="ml-auto text-[11px] font-bold text-[var(--fg-muted)] tracking-wider">
+            <span className="ml-auto text-[11px] font-semibold text-[var(--fg-muted)] tracking-wider">
               SET {set.number}
             </span>
           </div>
         </div>
         
-        <h3 className="text-base font-bold text-[var(--fg)] mb-1.5 group-hover:text-[var(--accent)] transition-colors line-clamp-2">
+        <h3 className="text-[17px] font-bold text-[var(--fg)] mb-2 group-hover:text-[var(--accent)] transition-colors line-clamp-2 leading-snug">
           {set.title}
         </h3>
         
-        <p className="text-sm text-[var(--fg-muted)] leading-snug mb-3 line-clamp-3">
+        <p className="text-sm font-normal text-[var(--fg-muted)] leading-relaxed mb-4 line-clamp-3">
           {set.description}
         </p>
       </div>
