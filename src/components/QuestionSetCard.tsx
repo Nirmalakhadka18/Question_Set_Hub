@@ -115,9 +115,9 @@ export default function QuestionSetCard({ set }: QuestionSetCardProps) {
         <div
           className="flex items-center justify-between text-sm font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 transition-colors"
         >
-          <span>Question Set</span>
-          <span className="flex items-center gap-1 text-blue-600">
-            View Set <ArrowUpRightIcon className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+          <span className="text-gray-500 dark:text-gray-500">Set {set.number}</span>
+          <span className="flex items-center gap-1 text-blue-600 font-bold">
+            View Question Set <ArrowUpRightIcon className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </span>
         </div>
       </div>

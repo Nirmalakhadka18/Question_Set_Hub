@@ -17,7 +17,7 @@ export const categories = [
   "Cloud Security",
   "Web Security",
   "Linux",
-  "Identity & Access Management",
+  "IAM",
   "Interview Preparation",
   "Security / SOC"
 ];
@@ -108,7 +108,7 @@ export const questionSets: QuestionSet[] = [
     number: "11",
     title: "IAM Preparation",
     description: "Prepare for Identity and Access Management interview questions.",
-    category: "Identity & Access Management",
+    category: "IAM",
     url: "https://iam-preparation-interview.pages.dev/"
   },
   {

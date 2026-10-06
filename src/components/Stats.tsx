@@ -1,7 +1,7 @@
 export default function Stats() {
   const stats = [
     { value: '12', label: 'Question Sets' },
-    { value: '9+', label: 'Technical Domains' },
+    { value: '10+', label: 'Technical Topics' },
     { value: '1', label: 'Central Hub' },
   ];
 
