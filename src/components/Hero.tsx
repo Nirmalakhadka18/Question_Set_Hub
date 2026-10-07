@@ -10,7 +10,7 @@ export default function Hero() {
         
         <h1 className="max-w-[1200px] text-3xl font-extrabold tracking-tight sm:text-[44px] lg:text-[58px] leading-[1.05] mb-4">
           <span className="text-[var(--fg)]">Your Central Hub for</span><br className="hidden sm:block" />{" "}
-          <span className="bg-gradient-to-r from-[#2563eb] to-[#0ea5e9] bg-clip-text text-transparent">Technical Interview Preparation</span>
+          <span className="text-[#2563eb]">Technical Interview Preparation</span>
         </h1>
         
         <p className="max-w-[850px] text-base sm:text-lg font-medium leading-relaxed text-[var(--fg-muted)]">

@@ -6,10 +6,10 @@ export default function Footer() {
           <div className="flex justify-center md:justify-start mb-6 md:mb-0">
             <div>
               <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
-                <div className="flex h-6 w-6 items-center justify-center rounded-sm bg-[var(--accent)] text-white font-mono text-xs font-bold">
-                  Q
+                <div className="flex h-6 w-6 items-center justify-center rounded-sm bg-[var(--accent)] text-white font-mono text-xs font-bold tracking-tight">
+                  NI
                 </div>
-                <span className="text-base font-bold text-[var(--fg)] dark:text-[var(--fg)] tracking-tight">Question Set Hub</span>
+                <span className="text-base font-bold text-[var(--fg)] dark:text-[var(--fg)] tracking-tight">NHPREP Interview</span>
               </div>
               <p className="text-sm text-[var(--fg-muted)] dark:text-[var(--fg-muted)] text-center md:text-left max-w-xs">
                 Centralized access to technical interview preparation simulator modules.
@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
         
         <div className="mt-8 border-t border-[var(--border)] dark:border-[var(--border)] pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-mono text-[var(--fg-muted)]">
-          <p>&copy; {new Date().getFullYear()} Question Set Hub. System Module.</p>
+          <p>&copy; {new Date().getFullYear()} NHPREP Interview. System Module.</p>
         </div>
       </div>
     </footer>
