@@ -7,7 +7,7 @@ export default function Footer() {
             <div>
               <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
                 <div className="flex h-6 w-6 items-center justify-center rounded-sm bg-[var(--accent)] text-white font-mono text-xs font-bold tracking-tight">
-                  NI
+                  NH
                 </div>
                 <span className="text-base font-bold text-[var(--fg)] dark:text-[var(--fg)] tracking-tight">NHPREP Interview</span>
               </div>
