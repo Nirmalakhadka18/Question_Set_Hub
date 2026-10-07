@@ -6,10 +6,9 @@ const ArrowUpRightIcon = ({ className }: { className?: string }) => (
 
 interface QuestionSetCardProps {
   set: QuestionSet;
-  priority?: boolean;
 }
 
-export default function QuestionSetCard({ set, priority }: QuestionSetCardProps) {
+export default function QuestionSetCard({ set }: QuestionSetCardProps) {
   return (
     <a
       href={set.url}
@@ -23,8 +22,7 @@ export default function QuestionSetCard({ set, priority }: QuestionSetCardProps)
             src={set.imageUrl} 
             alt={set.title} 
             className="h-full w-full object-cover object-center"
-            loading={priority ? "eager" : "lazy"}
-            fetchPriority={priority ? "high" : "auto"}
+            loading="lazy"
           />
         </div>
         
