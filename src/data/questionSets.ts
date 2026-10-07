@@ -30,7 +30,7 @@ export const questionSets: QuestionSet[] = [
     description: "Practice essential networking concepts and commonly asked interview questions for freshers.",
     category: "Networking",
     url: "https://networking.nhprep.com/",
-    imageUrl: "/images/networking_rack_1791279720089.jpg"
+    imageUrl: "/images/networking_rack_1791279720089.webp"
   },
   {
     id: "2",
@@ -39,7 +39,7 @@ export const questionSets: QuestionSet[] = [
     description: "Practice firewall and network security interview questions.",
     category: "Network Security",
     url: "https://firewall.nhprep.com",
-    imageUrl: "/images/firewall_security_1791279733257.jpg"
+    imageUrl: "/images/firewall_security_1791279733257.webp"
   },
   {
     id: "3",
@@ -48,7 +48,7 @@ export const questionSets: QuestionSet[] = [
     description: "Prepare for email security concepts and interview questions.",
     category: "Security",
     url: "https://mailsec.nhprep.com/",
-    imageUrl: "/images/email_security_1791279745768.jpg"
+    imageUrl: "/images/email_security_1791279745768.webp"
   },
   {
     id: "4",
@@ -57,7 +57,7 @@ export const questionSets: QuestionSet[] = [
     description: "Prepare for DevOps concepts, tools, and interview questions.",
     category: "DevOps",
     url: "https://devops-interview-prep.yyaswanth528.workers.dev/",
-    imageUrl: "/images/devops_pipeline_1791279758940.jpg"
+    imageUrl: "/images/devops_pipeline_1791279758940.webp"
   },
   {
     id: "5",
@@ -66,7 +66,7 @@ export const questionSets: QuestionSet[] = [
     description: "Practice cloud security concepts and interview questions.",
     category: "Cloud Security",
     url: "https://cloudsec.nhprep.com/",
-    imageUrl: "/images/cloud_security_1791279772219.jpg"
+    imageUrl: "/images/cloud_security_1791279772219.webp"
   },
   {
     id: "6",
@@ -75,7 +75,7 @@ export const questionSets: QuestionSet[] = [
     description: "Explore core networking concepts and fundamentals.",
     category: "Networking",
     url: "https://netlab.nhprep.com/",
-    imageUrl: "/images/network_topology_1791279784129.jpg"
+    imageUrl: "/images/network_topology_1791279784129.webp"
   },
   {
     id: "7",
@@ -84,7 +84,7 @@ export const questionSets: QuestionSet[] = [
     description: "Practice web API security concepts and interview questions.",
     category: "Web Security",
     url: "https://webapisec.nhprep.com/",
-    imageUrl: "/images/api_security_1791279796307.jpg"
+    imageUrl: "/images/api_security_1791279796307.webp"
   },
   {
     id: "8",
@@ -93,7 +93,7 @@ export const questionSets: QuestionSet[] = [
     description: "Prepare for Microsoft Azure concepts and interview questions.",
     category: "Cloud",
     url: "https://azure.nhprep.com",
-    imageUrl: "/images/azure_cloud_1791279809139.jpg"
+    imageUrl: "/images/azure_cloud_1791279809139.webp"
   },
   {
     id: "9",
@@ -102,7 +102,7 @@ export const questionSets: QuestionSet[] = [
     description: "Practice Linux concepts and Linux interview questions.",
     category: "Linux",
     url: "https://linux-interview-lab.pages.dev/linux-interview-questions/1",
-    imageUrl: "/images/linux_server_1791279821073.jpg"
+    imageUrl: "/images/linux_server_1791279821073.webp"
   },
   {
     id: "10",
@@ -111,7 +111,7 @@ export const questionSets: QuestionSet[] = [
     description: "Prepare for Identity and Access Management interview questions.",
     category: "IAM",
     url: "https://iam.nhprep.com/",
-    imageUrl: "/images/iam_architecture_1791279835009.jpg"
+    imageUrl: "/images/iam_architecture_1791279835009.webp"
   },
   {
     id: "11",
@@ -120,7 +120,7 @@ export const questionSets: QuestionSet[] = [
     description: "Practice Security Operations Center (SOC) analyst concepts and L1 interview questions through an interactive preparation lab.",
     category: "Security / SOC",
     url: "https://soc.nhprep.com/",
-    imageUrl: "/images/soc_analyst_1791279846665.jpg"
+    imageUrl: "/images/soc_analyst_1791279846665.webp"
   },
   {
     id: "12",
@@ -129,6 +129,6 @@ export const questionSets: QuestionSet[] = [
     description: "Interactive interview simulator covering DNS, IP addressing, DHCP, and related network services.",
     category: "Networking",
     url: "https://dnsip.nhprep.com",
-    imageUrl: "/images/dns_infrastructure_1791279858246.jpg"
+    imageUrl: "/images/dns_infrastructure_1791279858246.webp"
   }
 ];
