@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="pt-8 pb-6 border-b border-[var(--border)]">
-      <div className="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-12 xl:px-14 flex flex-col items-center text-center">
+      <div className="mx-auto max-w-[1600px] px-4 md:px-8 lg:px-12 xl:px-14 flex flex-col items-center text-center">
         
         <div className="inline-flex items-center gap-2 rounded border border-[var(--border)] bg-white px-3 py-1.5 text-xs sm:text-[13px] font-bold mb-4 uppercase tracking-wider text-[var(--accent)] shadow-sm">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10h16"/><path d="M4 14h16"/></svg>

@@ -31,7 +31,7 @@ function App() {
         <Hero />
         
         <section id="question-sets" className="pt-6 pb-8">
-          <div className="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-12 xl:px-14">
+          <div className="mx-auto max-w-[1600px] px-4 md:px-8 lg:px-12 xl:px-14">
             <div className="mb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
                 <h2 className="text-lg font-bold text-[var(--fg)] sm:text-xl">Question Sets</h2>
